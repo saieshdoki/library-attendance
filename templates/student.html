@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            text-align: center;
+            background-color: white;
+            height: 500px;
+            max-width: 550px;
+            margin-left: 500px;
+            background: #cccccc;
+            padding: 15px;
+            border-radius: 12px;
+            position: relative;
+            margin-top: 0px;
+        }
+        
+        .box {
+            padding: 5px;
+        }
+        /* body {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url(https://i.postimg.cc/Px3JFJKj/library-pic.jpg);
+        height: 100vh;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-size: 100% 100%;
+        position: relative;
+        background-attachment: fixed;
+      } */
+        
+        body {
+            padding-top: 150px;
+            background: #28292d;
+            text-align: center;
+        }
+        
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://i.postimg.cc/Px3JFJKj/library-pic.jpg);
+            height: 90vh;
+            -webkit-background-size: cover;
+            background-size: 93%;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="box">
+                <h2>Welcome {{features.rollno}}</h2>
+                <form method="" action="books">
+                    <p style="color: black">Want to see availability of books</p>
+                    <label>Dept : </label>
+                    <input type="text" placeholder="Enter department" name="dept" cols="25" rows="2" required />
+                    <input type="submit" />
+                </form>
+            </div>
+            <div class="box">
+                <form method="" action="take">
+                    <p style="color: black">Take a book</p>
+                    <input type="submit" />
+                </form>
+            </div>
+            <div class="box">
+                <form method="" action="return1">
+                    <p style="color: black">Return a book</p>
+                    <input type="submit" />
+                </form>
+            </div>
+            <div>
+                <form method="" action="attendance">
+                    <p style="color: black">Check for your attendance</p>
+                    <input type="text" placeholder="Enter Rollno" name="rollno" cols="25" rows="2" required />
+                    <input type="submit" />
+                </form>
+            </div>
+            <div>
+                <form method="" action="check">
+                    <p style="color: black">Check your profile</p>
+                    <input type="text" placeholder="Enter Rollno" name="rollno" cols="25" rows="2" required />
+                    <input type="submit" />
+                </form>
+            </div>
+            <div>
+                <form method="" action="mattendance">
+                    <p style="color: black">Check for your monthly attendance</p>
+                    <input type="text" placeholder="Enter Rollno" name="rollno" cols="25" rows="2" required />
+                    <label for="books">Choose a book:</label>
+                    <select name="month">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+
+            </select>
+                    <input type="submit" />
+                </form>
+            </div>
+            <div>
+                <form method="" action="paper1">
+                    <p style="color: black">Check for research papers</p>
+                    <input type="text" placeholder="Enter dept" name="dept" cols="25" rows="2" required />
+                    <input type="submit" />
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

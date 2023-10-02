@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Float four columns side by side */
+        
+        .column {
+            float: left;
+            width: 55%;
+            padding: 0 10px;
+        }
+        /* Remove extra left and right margins, due to padding */
+        
+        .row {
+            margin: 0 -5px;
+            margin-top: 11%;
+            margin-left: 35%;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive columns */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 50px;
+            }
+        }
+        /* Style the counter cards */
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 50px;
+            text-align: center;
+            background-color: rgb(146, 246, 246);
+        }
+        
+        .scroll {
+            margin: 2px, 2px;
+            width: 400px;
+            height: 180px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: justify;
+        }
+        
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://i.postimg.cc/Px3JFJKj/library-pic.jpg);
+            height: cover;
+            -webkit-background-size: cover;
+            background-size: 95%;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid rgb(1, 5, 7);
+            color: rgb(1, 7, 7);
+        }
+        /* table{
+                  margin-top: 14%;
+              }
+              table.center {
+                  margin-left: auto;
+                  margin-right: auto;
+              }
+              body{
+                  background-color: black;
+              } */
+        
+        */ */
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="scroll">
+                    <h1 style="text-align: center">Attendance</h1>
+                    {% for feature in features %}
+
+                    <p style="color: rgb(16, 17, 18)"><b>Rollno:</b>Rollno:{{feature.rollno}}</p>
+                    <p style="color: rgb(16, 17, 18)"><b>Name:</b>Name:{{feature.name}}</p>
+                    <p style="color: rgb(9, 9, 11)"><b>Start_time:</b>{{feature.start}}</p>
+                    <p style="color: rgb(9, 10, 9)"><b>End_time:</b>{{feature.end}}</p>
+                    <p style="color: rgb(13, 13, 14)"><b>Date:</b>{{feature.date}}</p>
+                    <br /> {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

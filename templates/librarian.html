@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            text-align: center;
+            background-color: white;
+            height: 500px;
+            max-width: 550px;
+            margin-left: 500px;
+            background: #cccccc;
+            padding: 15px;
+            border-radius: 12px;
+            position: relative;
+            margin-top: 0px;
+        }
+        
+        .box {
+            padding: 5px;
+        }
+        /* body {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url(https://i.postimg.cc/Px3JFJKj/library-pic.jpg);
+        height: 100vh;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-size: 100% 100%;
+        position: relative;
+        background-attachment: fixed;
+      } */
+        
+        body {
+            padding-top: 150px;
+            background: #28292d;
+            text-align: center;
+        }
+        
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://i.postimg.cc/Px3JFJKj/library-pic.jpg);
+            height: 90vh;
+            -webkit-background-size: cover;
+            background-size: 93%;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="box">
+                <form method="" action="librarian">
+                    <p style="color: black">Send reminder email</p>
+                    <input type="submit" />
+                </form>
+            </div>
+            <div class="box">
+                <form method="" action="update">
+                    <p style="color: black">Add a new book</p>
+                    <input type="text" placeholder="Enter bookname" name="bname" cols="25" rows="2" required />
+                    <input type="text" placeholder="Enter department" name="dname" cols="25" rows="2" required />
+                    <input type="text" placeholder="availability" name="count" cols="25" rows="2" required />
+                    <input type="submit" />
+                </form>
+            </div>
+            <div class="box">
+                <form method="" action="research">
+                    <p style="color: black">Add a new research paper</p>
+                    <input type="text" placeholder="Enter department" name="dname" cols="25" rows="2" required />
+                    <input type="url" id="homepage" name="url" placeholder="Enter URL"><br><br>
+                    <input type="submit" />
+                </form>
+            </div>
+            <div class="box">
+                <form method="" action="present">
+                    <p style="color: black">See present strength of students</p>
+                    <input type="date" placeholder="Enter date" name="date" cols="25" rows="2" required />
+                    <input type="submit" />
+                </form>
+            </div>
+
+
+
+        </div>

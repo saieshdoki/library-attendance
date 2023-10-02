@@ -1,0 +1,12 @@
+{% load static %} {% for feature in features %}
+
+<body>
+    <center>
+        <div>
+            <p>department {{feature.dept1}}</p>
+            <p> URL to paper is {{feature.paper1 | urlize}}
+            </p>
+        </div>
+    </center>
+</body>
+{% endfor %}

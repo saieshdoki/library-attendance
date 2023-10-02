@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            position: fixed;
+            margin-left: 480px;
+            overflow-y: hidden;
+        }
+        
+        .container1 {
+            text-align: center;
+            background-color: white;
+            height: 50px;
+            max-width: 600px;
+            margin: auto;
+            background: #cccccc;
+            padding: 10px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            background-attachment: fixed;
+        }
+        
+        .container2 {
+            text-align: center;
+            background-color: white;
+            height: 50px;
+            max-width: 600px;
+            margin: auto;
+            background: #cccccc;
+            padding: 10px;
+            background-attachment: fixed;
+        }
+        
+        .container3 {
+            text-align: center;
+            background-color: white;
+            height: 50px;
+            max-width: 600px;
+            margin: auto;
+            background: #cccccc;
+            padding: 10px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-attachment: fixed;
+        }
+        
+        body {
+            padding-top: 150px;
+            background: #28292d;
+            text-align: center;
+        }
+        
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.postimg.cc/Px3JFJKj/library-pic.jpg);
+            height: 100vh;
+            -webkit-background-size: cover;
+            background-size: 93%;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <form method="" action="return2">
+                {% csrf_token %}
+                <div class="container1">
+                    <label>Rollno : </label>
+                    <input type="text" placeholder="Enter Roll" name="rollno" cols="25" rows="2" required>
+                </div>
+                <div class="container2">
+                    <label for="books">Return a book:</label>
+                    <select name="books">
+                        {% for feature in features %}
+                <option value="{{feature.Name}}">{{feature.Name}}</option>
+                       {% endfor %}
+                    </select>
+                </div>
+                <div class="container3">
+                    <input type="submit">
+                </div>
+
+            </form>
+        </div>
+        </div>
+    </header>
+</body>
+
+</html>

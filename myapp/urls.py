@@ -1,0 +1,31 @@
+from django.urls import path
+from . import views
+urlpatterns=[
+    path('',views.index,name='index'),
+    path('sign_in',views.sign_in,name='sign_in'),
+    path('sign_out',views.sign_out,name='sign_out'),
+    path('vacancies',views.vacancies,name='vacancies'),
+    path('books',views.books,name='books'),
+    path('take',views.take,name='take'),
+    path('take1',views.take1,name='take1'),
+    path('return1',views.return1,name='return1'),
+    path('return2',views.return2,name='return2'),
+    path('attendance',views.attendance,name='attendance'),
+    path('index1',views.index1,name='index1'),
+     path('about',views.about,name='about'),
+    path('check',views.check,name='check'),
+    path('a',views.a,name='a'),
+    path('b',views.b,name='b'),
+    path('c',views.c,name='c'),
+    path('otp',views.otp,name='otp'),
+    path('otp1',views.otp1,name='otp1'),
+    path('otp2',views.otp2,name='otp2'),
+    path('mattendance',views.mattendance,name='mattendance'),
+    path('librarian',views.librarian,name='librarian'),
+    path('librarian1',views.librarian1,name='librarian1'),
+    path('update',views.update,name='update'),
+    path('research',views.research,name='research'),
+    path('paper1',views.paper1,name='paper1'),
+    path('invalid',views.invalid,name='invalid'),
+    path('present',views.present,name='present')
+    ]
